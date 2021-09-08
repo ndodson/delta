@@ -1,6 +1,6 @@
 # Delta [![Build Status](https://github.com/quilljs/delta/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/quilljs/delta/actions?query=branch%3Amaster) [![Coverage Status](https://img.shields.io/coveralls/quilljs/delta.svg)](https://coveralls.io/r/quilljs/delta)
 
-Deltas are a simple, yet expressive format that can be used to describe contents and changes. The format is JSON based, and is human readable, yet easily parsible by machines. Deltas can describe any rich text document, includes all text and formatting information, without the ambiguity and complexity of HTML.
+Deltas are a simple, yet expressive format that edit be used to describe contents and changes. The format is JSON based, and is human readable, yet easily parsible by machines. Deltas can describe any rich text document, includes all text and formatting information, without the ambiguity and complexity of HTML.
 
 A Delta is made up of an [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of Operations, which describe changes to a document. They can be an [`insert`](#insert-operation), [`delete`](#delete-operation) or [`retain`](#retain-operation). Note operations do not take an index. They always describe the change at the current index. Use retains to "keep" or "skip" certain parts of the document.
 
